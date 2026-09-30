@@ -4,14 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>机柜图放大预览</title>
-    <script type="module" crossorigin src="/assets/preview-CkoJbfvd.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/style-BYefLPfo.js">
-    <link rel="stylesheet" crossorigin href="/assets/style-B7ou3QbX.css">
+    <script type="module" crossorigin src="/assets/preview-Ip198aiN.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/preload-helper-DD1OZmLC.js">
+    <link rel="stylesheet" crossorigin href="/assets/style-CPFtvPvz.css">
   </head>
   <body class="preview-window-body">
     <main class="preview-window-main">
-      <header class="preview-window-header"><h1>机柜图放大预览</h1><p>可滚动查看完整机柜图；将鼠标停在设备色块上查看详细信息。</p></header>
-      <div id="popupContent" class="preview-window-content">正在加载预览图…</div>
+      <header class="preview-window-header">
+        <div><h1>机柜图放大预览</h1><p>可缩放或滚动查看完整机柜图；将鼠标停在设备色块上查看详细信息。</p></div>
+        <div class="preview-window-actions" aria-label="预览缩放">
+          <button id="fitView" type="button" aria-pressed="true">适应窗口</button>
+          <button id="actualView" type="button" aria-pressed="false">原始大小</button>
+        </div>
+      </header>
+      <div id="popupViewport" class="preview-window-viewport">
+        <div id="popupStage" class="preview-window-stage"><div id="popupContent" class="preview-window-content">正在加载预览图…</div></div>
+      </div>
     </main>
   </body>
 </html>
